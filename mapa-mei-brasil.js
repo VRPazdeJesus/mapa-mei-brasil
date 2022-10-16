@@ -1,6 +1,6 @@
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([-12.9704, -38.5124], 13);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    maxZoom: 18,
+    subdomains:['mt0','mt1','mt2','mt3']
 }).addTo(map);
